@@ -1,0 +1,51 @@
+/**
+ *    
+ * @author [First Name] [Last Name] <[Andrew ID]>
+ * @section [Section Letter]
+ */
+
+// YOU MAY NOT IMPORT ANY ADDITIONAL
+// CLASSES OR PACKAGES
+import java.util.*;
+
+public class BinaryTrees {
+  public static boolean allDecreasing(TreeNode<Integer> t){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static int countLeavesAtLevel(TreeNode<Integer> t, int level){
+    return -1; // remove this line when you are done with this method
+  }
+
+  public static List<Integer> interiorNodesList(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static boolean isPerfect(TreeNode<Integer> t){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static boolean isSubset(TreeNode<String> t1, TreeNode<String> t2){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static TreeNode<Integer> removeSomeParents(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static TreeNode<String> insertAfter(TreeNode<String> t, String target, String newString){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static boolean areEqual(TreeNode<String> t1, TreeNode<String> t2){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static TreeNode<String> createTree(int n, String s){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static TreeNode<Integer> mirror(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }
+}

@@ -1,0 +1,86 @@
+/**
+ *    
+ * @author Justin Hilliard <jhilliar>
+ * @section A
+ */
+
+// YOU MAY NOT IMPORT ANY ADDITIONAL
+// CLASSES OR PACKAGES
+import java.util.*;
+
+public class BinaryTrees {
+  public static boolean allDecreasing(TreeNode<Integer> t){
+	  if (t.left == null && t.right == null){
+		  return true;
+	  }
+	  else if (t.left == null && t.right != null){
+		  if (t.data >= t.right.data)
+			  return allDecreasing(t.right);
+		  else return false;
+	  }
+	  else if (t.right == null && t.left != null){
+		  if (t.data >= t.left.data)
+			  return allDecreasing(t.left);
+		  else return false;
+	  }
+	  else return allDecreasing(t.right) && allDecreasing(t.left);
+  }
+
+  public static int countLeavesAtLevel(TreeNode<Integer> t, int level){
+	  if (t.left == null && t.right == null){
+		  if (level == 0) return 1;
+		  else return 0;
+	  }
+	  else if (t.left == null && t.right != null) 
+		  return countLeavesAtLevel(t.right, level-1);
+	  else if (t.right == null && t.left != null) 
+		  return countLeavesAtLevel(t.left, level-1);
+	  else return (countLeavesAtLevel(t.left, level-1) + countLeavesAtLevel(t.right, level-1));
+  }
+
+  public static List<Integer> interiorNodesList(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }	
+
+//  Countleaves method
+  public static boolean isPerfect(TreeNode<Integer> t){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static boolean isSubset(TreeNode<String> t1, TreeNode<String> t2){
+    return false; // remove this line when you are done with this method
+  }
+
+//  copy method
+  public static TreeNode<Integer> removeSomeParents(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static TreeNode<String> insertAfter(TreeNode<String> t, String target, String newString){
+    return null; // remove this line when you are done with this method
+  }	
+
+  public static boolean areEqual(TreeNode<String> t1, TreeNode<String> t2){
+    return false; // remove this line when you are done with this method
+  }
+
+  public static TreeNode<String> createTree(int n, String s){
+    return null; // remove this line when you are done with this method
+  }	
+  
+//  copy method
+
+  public static TreeNode<Integer> mirror(TreeNode<Integer> t){
+    return null; // remove this line when you are done with this method
+  }
+  
+  
+  public static void main (String [] args) {
+		TreeNode<Integer> root = new TreeNode<Integer>(6);
+		root.left = new TreeNode<Integer>(6);
+		root.right = new TreeNode<Integer>(4);
+		TreeDisplay<Integer> display = new TreeDisplay<Integer>();
+		display.setRoot(root);
+		System.out.println(countLeavesAtLevel(root, 1));
+	}
+}
